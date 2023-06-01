@@ -3,8 +3,6 @@
 
 using smartCvMat = std::shared_ptr<cv::Mat>;
 using smartLaserLine = std::shared_ptr<LaserLine>;
-//constexpr 
-const cv::Mat defaultMat = cv::Mat();//cv::Mat::zeros(cv::Size(3,3), CV_8U);
 
 
 /*
