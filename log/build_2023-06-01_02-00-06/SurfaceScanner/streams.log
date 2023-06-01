@@ -1,0 +1,20 @@
+[0.011s] Invoking command in '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner -- -j8 -l8
+[0.038s] Invoked command in '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner -- -j8 -l8
+[0.058s] Invoking command in '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner
+[0.063s] -- Install configuration: ""
+[0.063s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/ament_index/resource_index/package_run_dependencies/SurfaceScanner
+[0.063s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/ament_index/resource_index/parent_prefix_path/SurfaceScanner
+[0.063s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/environment/ament_prefix_path.sh
+[0.063s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/environment/ament_prefix_path.dsv
+[0.063s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/environment/path.sh
+[0.063s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/environment/path.dsv
+[0.063s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/local_setup.bash
+[0.063s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/local_setup.sh
+[0.063s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/local_setup.zsh
+[0.063s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/local_setup.dsv
+[0.064s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/package.dsv
+[0.064s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/ament_index/resource_index/packages/SurfaceScanner
+[0.064s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/cmake/SurfaceScannerConfig.cmake
+[0.064s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/cmake/SurfaceScannerConfig-version.cmake
+[0.064s] -- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/SurfaceScanner/share/SurfaceScanner/package.xml
+[0.064s] Invoked command in '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner
