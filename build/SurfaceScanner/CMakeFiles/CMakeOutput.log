@@ -495,3 +495,99 @@ int main(void)
   return 0;
 }
 
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dce08/fast && gmake[1]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_dce08.dir/build.make CMakeFiles/cmTC_dce08.dir/build
+gmake[2]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dce08.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_dce08.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dce08
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dce08.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_dce08.dir/CheckFunctionExists.c.o -o cmTC_dce08  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+gmake[2]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b4f18/fast && gmake[1]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b4f18.dir/build.make CMakeFiles/cmTC_b4f18.dir/build
+gmake[2]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4f18.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_b4f18.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b4f18
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4f18.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_b4f18.dir/CheckFunctionExists.c.o -o cmTC_b4f18 
+gmake[2]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9c429/fast && gmake[1]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_9c429.dir/build.make CMakeFiles/cmTC_9c429.dir/build
+gmake[2]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9c429.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_9c429.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9c429
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c429.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_9c429.dir/CheckFunctionExists.c.o -o cmTC_9c429 
+gmake[2]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_75dda/fast && gmake[1]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_75dda.dir/build.make CMakeFiles/cmTC_75dda.dir/build
+gmake[2]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_75dda.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_75dda.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_75dda
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75dda.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_75dda.dir/CheckFunctionExists.c.o -o cmTC_75dda 
+gmake[2]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b6871/fast && gmake[1]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_b6871.dir/build.make CMakeFiles/cmTC_b6871.dir/build
+gmake[2]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b6871.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_b6871.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b6871
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6871.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_b6871.dir/CheckFunctionExists.c.o -o cmTC_b6871 
+gmake[2]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_40219/fast && gmake[1]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_40219.dir/build.make CMakeFiles/cmTC_40219.dir/build
+gmake[2]: Entering directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_40219.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_40219.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_40219
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40219.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_40219.dir/CheckFunctionExists.c.o -o cmTC_40219  -lICE 
+gmake[2]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/CMakeTmp'
+
+
+

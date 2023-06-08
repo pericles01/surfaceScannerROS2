@@ -8,6 +8,10 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/aruco/charuco.hpp>
 #include <iostream>
+#include <sensor_msgs/PointCloud2.h>
+#include <pcl_conversions/pcl_conversions.h>
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
 
 
 /*
@@ -49,14 +53,14 @@ public:
     */
     void generatePcd(const cv::Mat &surface_img, const cv::Mat &surface_img_laser);
     //ToDo
-    // void get_pcd() const;
-    //void updatePcd(const cv::Mat &surface_koords, const cv::Mat &point_colors);
+    pcl::PCLPointCloud2ConstPtr &get_pcd() const;
+    void updatePcd(const cv::Mat &surface_koords, const cv::Mat &point_colors);
 
 private:
     Laser m_Laser;
     bool m_Calibrated;
     Camera m_Camera;
-    // pcl m_CurrentSurface;
+    pcl::PCLPointCloud2::Ptr m_CurrentSurface;
 
     /*
         Generates the surface koordinates using the plane equation.
@@ -64,7 +68,7 @@ private:
     void generateSurfaceLineKoordinates(const cv::Mat &surface_img, const cv::Mat &surface_img_laser, cv::Mat & surface_koords, cv::Mat & point_colors);
 };
 
-Scanner::Scanner(): m_Calibrated(false), m_Laser(Laser()), m_Camera(Camera()){
+Scanner::Scanner(): m_Calibrated(false), m_Laser(Laser()), m_Camera(Camera()), m_CurrentSurface(new pcl::PCLPointCloud2()){
 
 }
 
@@ -251,4 +255,12 @@ void Scanner::generatePcd(const cv::Mat &surface_img, const cv::Mat &surface_img
     generateSurfaceLineKoordinates(surface_img, surface_img_laser, surface_koords, point_colors);
     //updatePcd(surface_koords.t(), point_colors);
     std::cout<<"INFO: Finished point cloud generation!"<<std::endl;
+}
+
+pcl::PCLPointCloud2ConstPtr &Scanner::get_pcd() const{
+    return m_CurrentSurface;
+}
+
+void Scanner::updatePcd(const cv::Mat &surface_koords, const cv::Mat &point_colors){
+    //m_CurrentSurface
 }

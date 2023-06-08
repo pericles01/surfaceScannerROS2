@@ -21,7 +21,8 @@ public:
     // copy constructor
     LaserLine(const LaserLine &other);
     // copy assignment (copy-and-swap idiom)
-    LaserLine &operator=(LaserLine other)noexcept;
+    //LaserLine &operator=(LaserLine other)noexcept;
+    LaserLine &operator=(const LaserLine &other);
     ~LaserLine();
     // getters
     cv::Mat get_laserPoints() const;
@@ -48,7 +49,7 @@ LaserLine::LaserLine(const LaserLine &other):m_originalImg(other.m_originalImg),
 {
 
 }
-
+/*
 LaserLine &LaserLine::operator=(LaserLine other)noexcept{
     std::swap(m_laserPoints, other.m_laserPoints);
     std::swap(m_ImgDiffLaser, other.m_ImgDiffLaser);
@@ -60,7 +61,7 @@ LaserLine &LaserLine::operator=(LaserLine other)noexcept{
     
     return *this;
 }
-
+*/
 LaserLine::~LaserLine(){
 
 }
@@ -75,4 +76,16 @@ cv::Mat LaserLine::get_rotMatrix() const{
 
 cv::Mat LaserLine::get_tVec() const{
     return m_tVec;
-    }
+}
+
+LaserLine &LaserLine::operator=(const LaserLine &other){
+    m_ImgDiffLaser = other.m_ImgDiffLaser;
+    m_tVec = other.m_tVec;
+    m_laserPoints = other.m_laserPoints;
+    m_originalImg = other.m_originalImg;
+    m_imgWithLaser = other.m_imgWithLaser;
+    m_rotMat = other.m_rotMat;
+    m_mask = other.m_mask;
+
+    return *this;
+}
