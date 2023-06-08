@@ -1,5 +1,4 @@
 #include "LaserLine.hpp"
-//#include <cassert>
 
 LaserLine defaultLaserLine = LaserLine();
 
