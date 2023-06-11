@@ -1,4 +1,3 @@
-#include "rclcpp/rclcpp.hpp"
 #include "Utility.hpp"
 
 using smartCvMat = std::shared_ptr<cv::Mat>;
