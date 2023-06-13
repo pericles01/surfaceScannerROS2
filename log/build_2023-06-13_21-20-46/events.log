@@ -1,0 +1,388 @@
+[0.000000] (-) TimerEvent: {}
+[0.000160] (-) JobUnselected: {'identifier': 'SurfaceScanner'}
+[0.000242] (interfaces) JobQueued: {'identifier': 'interfaces', 'dependencies': OrderedDict()}
+[0.000278] (interfaces) JobStarted: {'identifier': 'interfaces'}
+[0.009505] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'cmake'}
+[0.009857] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/interfaces', '-DCMAKE_INSTALL_PREFIX=/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces'], 'cwd': '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'peri'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peri'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1746'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c2652ab1119353e706ae64d76488b3d3'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'peri'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/peri/anaconda3/bin:/home/peri/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/peri:@/tmp/.ICE-unix/1746,unix/peri:/tmp/.ICE-unix/1746'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/beb766fb_8e40_44fe_bef1_be62dcd2bfff'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QFXB61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peri/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peri/anaconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c2652ab1119353e706ae64d76488b3d3'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('CONDA_PREFIX', '/home/peri/anaconda3'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.078271] (interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.099067] (-) TimerEvent: {}
+[0.144387] (interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.151904] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199175] (-) TimerEvent: {}
+[0.201759] (interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.209125] (interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.209514] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.210155] (interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.213480] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.271537] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.278060] (interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.278363] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.278833] (interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.281427] (interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.282796] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake_core: 1.3.4 (/opt/ros/humble/share/ament_cmake_core/cmake)\n'}
+[0.299294] (-) TimerEvent: {}
+[0.399581] (-) TimerEvent: {}
+[0.499851] (-) TimerEvent: {}
+[0.600116] (-) TimerEvent: {}
+[0.700429] (-) TimerEvent: {}
+[0.800734] (-) TimerEvent: {}
+[0.901187] (-) TimerEvent: {}
+[0.939042] (interfaces) StdoutLine: {'line': b'-- Found Python3: /home/peri/anaconda3/bin/python3.10 (found version "3.10.9") found components: Interpreter \n'}
+[1.000470] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.001285] (-) TimerEvent: {}
+[1.009022] (interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.088364] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101401] (-) TimerEvent: {}
+[1.121358] (interfaces) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.201535] (-) TimerEvent: {}
+[1.301862] (-) TimerEvent: {}
+[1.402151] (-) TimerEvent: {}
+[1.502443] (-) TimerEvent: {}
+[1.602740] (-) TimerEvent: {}
+[1.615414] (interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.702889] (-) TimerEvent: {}
+[1.803198] (-) TimerEvent: {}
+[1.861448] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.903329] (-) TimerEvent: {}
+[2.003613] (-) TimerEvent: {}
+[2.103926] (-) TimerEvent: {}
+[2.170876] (interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.191067] (interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /home/peri/anaconda3/bin/python3 (found suitable version "3.10.9", minimum required is "3.6") \n'}
+[2.192393] (interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.203990] (-) TimerEvent: {}
+[2.214796] (interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /home/peri/anaconda3/lib/libpython3.10.so (found suitable version "3.10.9", minimum required is "3.5") \n'}
+[2.214976] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /home/peri/anaconda3/bin/python3\n'}
+[2.215038] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /home/peri/anaconda3/include/python3.10\n'}
+[2.215094] (interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /home/peri/anaconda3/lib/libpython3.10.so\n'}
+[2.233689] (interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.304086] (-) TimerEvent: {}
+[2.404384] (-) TimerEvent: {}
+[2.452374] (interfaces) StdoutLine: {'line': b'-- Using numpy include directory: /home/peri/anaconda3/lib/python3.10/site-packages/numpy/core/include\n'}
+[2.462438] (interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.486486] (interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:166 (add_library):\n'}
+[2.486690] (interfaces) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[2.486763] (interfaces) StderrLine: {'line': b'  interfaces__rosidl_generator_py because files in some directories may\n'}
+[2.486842] (interfaces) StderrLine: {'line': b'  conflict with libraries in implicit directories:\n'}
+[2.486899] (interfaces) StderrLine: {'line': b'\n'}
+[2.486951] (interfaces) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[2.487005] (interfaces) StderrLine: {'line': b'      /home/peri/anaconda3/lib\n'}
+[2.487056] (interfaces) StderrLine: {'line': b'\n'}
+[2.487107] (interfaces) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[2.487157] (interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.487210] (interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.487260] (interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.487311] (interfaces) StderrLine: {'line': b'  CMakeLists.txt:12 (rosidl_generate_interfaces)\n'}
+[2.487361] (interfaces) StderrLine: {'line': b'\n'}
+[2.487410] (interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[2.489426] (interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):\n'}
+[2.489525] (interfaces) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[2.489584] (interfaces) StderrLine: {'line': b'  interfaces__rosidl_typesupport_fastrtps_c__pyext because files in some\n'}
+[2.489639] (interfaces) StderrLine: {'line': b'  directories may conflict with libraries in implicit directories:\n'}
+[2.489692] (interfaces) StderrLine: {'line': b'\n'}
+[2.489744] (interfaces) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[2.489802] (interfaces) StderrLine: {'line': b'      /home/peri/anaconda3/lib\n'}
+[2.489854] (interfaces) StderrLine: {'line': b'\n'}
+[2.489905] (interfaces) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[2.489960] (interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.490010] (interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.490060] (interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.490109] (interfaces) StderrLine: {'line': b'  CMakeLists.txt:12 (rosidl_generate_interfaces)\n'}
+[2.490166] (interfaces) StderrLine: {'line': b'\n'}
+[2.490216] (interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[2.491709] (interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):\n'}
+[2.491798] (interfaces) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[2.491856] (interfaces) StderrLine: {'line': b'  interfaces__rosidl_typesupport_introspection_c__pyext because files in some\n'}
+[2.491921] (interfaces) StderrLine: {'line': b'  directories may conflict with libraries in implicit directories:\n'}
+[2.491977] (interfaces) StderrLine: {'line': b'\n'}
+[2.492029] (interfaces) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[2.492090] (interfaces) StderrLine: {'line': b'      /home/peri/anaconda3/lib\n'}
+[2.492141] (interfaces) StderrLine: {'line': b'\n'}
+[2.492192] (interfaces) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[2.492242] (interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.492292] (interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.492342] (interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.492392] (interfaces) StderrLine: {'line': b'  CMakeLists.txt:12 (rosidl_generate_interfaces)\n'}
+[2.492442] (interfaces) StderrLine: {'line': b'\n'}
+[2.492492] (interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[2.493918] (interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):\n'}
+[2.494009] (interfaces) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[2.494070] (interfaces) StderrLine: {'line': b'  interfaces__rosidl_typesupport_c__pyext because files in some directories\n'}
+[2.494125] (interfaces) StderrLine: {'line': b'  may conflict with libraries in implicit directories:\n'}
+[2.494179] (interfaces) StderrLine: {'line': b'\n'}
+[2.494232] (interfaces) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[2.494284] (interfaces) StderrLine: {'line': b'      /home/peri/anaconda3/lib\n'}
+[2.494335] (interfaces) StderrLine: {'line': b'\n'}
+[2.494387] (interfaces) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[2.494438] (interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.494489] (interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.494539] (interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.494590] (interfaces) StderrLine: {'line': b'  CMakeLists.txt:12 (rosidl_generate_interfaces)\n'}
+[2.494641] (interfaces) StderrLine: {'line': b'\n'}
+[2.494691] (interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[2.496796] (interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[2.498696] (interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/interfaces\n'}
+[2.504510] (-) TimerEvent: {}
+[2.506737] (interfaces) CommandEnded: {'returncode': 0}
+[2.507391] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'build'}
+[2.508529] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/interfaces', '--', '-j8', '-l8'], 'cwd': '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'peri'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peri'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1746'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c2652ab1119353e706ae64d76488b3d3'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'peri'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/peri/anaconda3/bin:/home/peri/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/peri:@/tmp/.ICE-unix/1746,unix/peri:/tmp/.ICE-unix/1746'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/beb766fb_8e40_44fe_bef1_be62dcd2bfff'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QFXB61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peri/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peri/anaconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c2652ab1119353e706ae64d76488b3d3'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('CONDA_PREFIX', '/home/peri/anaconda3'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.537673] (interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.544754] (interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.549954] (interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_interfaces\n'}
+[2.604612] (-) TimerEvent: {}
+[2.704898] (-) TimerEvent: {}
+[2.805231] (-) TimerEvent: {}
+[2.905545] (-) TimerEvent: {}
+[2.919253] (interfaces) StdoutLine: {'line': b'[  4%] Built target interfaces__cpp\n'}
+[2.930619] (interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.930889] (interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.932151] (interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.975176] (interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.977905] (interfaces) StdoutLine: {'line': b'creating interfaces.egg-info\n'}
+[2.984508] (interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/camera_calibration_imgs__functions.c.o\x1b[0m\n'}
+[2.985390] (interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/image_pair__functions.c.o\x1b[0m\n'}
+[2.986224] (interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/calibrate_laser_import__functions.c.o\x1b[0m\n'}
+[3.005659] (-) TimerEvent: {}
+[3.018205] (interfaces) StdoutLine: {'line': b'writing interfaces.egg-info/PKG-INFO\n'}
+[3.019643] (interfaces) StdoutLine: {'line': b'writing dependency_links to interfaces.egg-info/dependency_links.txt\n'}
+[3.021181] (interfaces) StdoutLine: {'line': b'writing top-level names to interfaces.egg-info/top_level.txt\n'}
+[3.022381] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[3.073860] (interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_generator_c.so\x1b[0m\n'}
+[3.105776] (-) TimerEvent: {}
+[3.106157] (interfaces) StdoutLine: {'line': b"reading manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[3.107009] (interfaces) StdoutLine: {'line': b"writing manifest file 'interfaces.egg-info/SOURCES.txt'\n"}
+[3.125720] (interfaces) StdoutLine: {'line': b'[ 19%] Built target interfaces__rosidl_generator_c\n'}
+[3.138985] (interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.139225] (interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.139376] (interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.182838] (interfaces) StdoutLine: {'line': b'[ 25%] Built target ament_cmake_python_build_interfaces_egg\n'}
+[3.205898] (-) TimerEvent: {}
+[3.306493] (-) TimerEvent: {}
+[3.380768] (interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/camera_calibration_imgs__type_support.cpp.o\x1b[0m\n'}
+[3.382152] (interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/image_pair__type_support.cpp.o\x1b[0m\n'}
+[3.383456] (interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/calibrate_laser_import__type_support.cpp.o\x1b[0m\n'}
+[3.406610] (-) TimerEvent: {}
+[3.491207] (interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/camera_calibration_imgs__type_support.cpp.o\x1b[0m\n'}
+[3.506723] (-) TimerEvent: {}
+[3.535441] (interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/camera_calibration_imgs__type_support.cpp.o\x1b[0m\n'}
+[3.606849] (-) TimerEvent: {}
+[3.682452] (interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/camera_calibration_imgs__type_support.cpp.o\x1b[0m\n'}
+[3.697020] (interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/camera_calibration_imgs__type_support.c.o\x1b[0m\n'}
+[3.706963] (-) TimerEvent: {}
+[3.752539] (interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/image_pair__type_support.cpp.o\x1b[0m\n'}
+[3.788137] (interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/image_pair__type_support.c.o\x1b[0m\n'}
+[3.798976] (interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/calibrate_laser_import__type_support.cpp.o\x1b[0m\n'}
+[3.801219] (interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/camera_calibration_imgs__type_support_c.cpp.o\x1b[0m\n'}
+[3.807080] (-) TimerEvent: {}
+[3.856552] (interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/image_pair__type_support.cpp.o\x1b[0m\n'}
+[3.873173] (interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.876020] (interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/calibrate_laser_import__type_support.c.o\x1b[0m\n'}
+[3.885513] (interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.890749] (interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/image_pair__type_support.cpp.o\x1b[0m\n'}
+[3.907193] (-) TimerEvent: {}
+[3.926733] (interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.940651] (interfaces) StdoutLine: {'line': b'[ 61%] Built target interfaces__rosidl_typesupport_c\n'}
+[3.969655] (interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/calibrate_laser_import__type_support.cpp.o\x1b[0m\n'}
+[3.981221] (interfaces) StdoutLine: {'line': b'[ 63%] Built target interfaces__rosidl_typesupport_cpp\n'}
+[3.991576] (interfaces) StdoutLine: {'line': b'[ 63%] Built target interfaces__rosidl_typesupport_introspection_c\n'}
+[4.001539] (interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/calibrate_laser_import__type_support.cpp.o\x1b[0m\n'}
+[4.007323] (-) TimerEvent: {}
+[4.012471] (interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/image_pair__type_support_c.cpp.o\x1b[0m\n'}
+[4.107429] (-) TimerEvent: {}
+[4.207930] (-) TimerEvent: {}
+[4.308414] (-) TimerEvent: {}
+[4.408923] (-) TimerEvent: {}
+[4.440359] (interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/calibrate_laser_import__type_support_c.cpp.o\x1b[0m\n'}
+[4.509035] (-) TimerEvent: {}
+[4.609574] (-) TimerEvent: {}
+[4.640770] (interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.661408] (interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.709691] (-) TimerEvent: {}
+[4.725090] (interfaces) StdoutLine: {'line': b'[ 74%] Built target interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.754577] (interfaces) StdoutLine: {'line': b'[ 74%] Built target interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.809816] (-) TimerEvent: {}
+[4.910075] (-) TimerEvent: {}
+[4.922164] (interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.987480] (interfaces) StdoutLine: {'line': b'[ 76%] Built target interfaces__rosidl_typesupport_fastrtps_c\n'}
+[5.001265] (interfaces) StdoutLine: {'line': b'[ 76%] Built target interfaces\n'}
+[5.010198] (-) TimerEvent: {}
+[5.016181] (interfaces) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.110311] (-) TimerEvent: {}
+[5.210628] (-) TimerEvent: {}
+[5.310934] (-) TimerEvent: {}
+[5.411287] (-) TimerEvent: {}
+[5.455811] (interfaces) StdoutLine: {'line': b'[ 78%] Built target interfaces__py\n'}
+[5.469277] (interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_camera_calibration_imgs_s.c.o\x1b[0m\n'}
+[5.469488] (interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_image_pair_s.c.o\x1b[0m\n'}
+[5.469597] (interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_calibrate_laser_import_s.c.o\x1b[0m\n'}
+[5.511423] (-) TimerEvent: {}
+[5.578006] (interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__rosidl_generator_py.so\x1b[0m\n'}
+[5.611572] (interfaces) StdoutLine: {'line': b'[ 87%] Built target interfaces__rosidl_generator_py\n'}
+[5.611728] (-) TimerEvent: {}
+[5.626153] (interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.626411] (interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.626534] (interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.711842] (-) TimerEvent: {}
+[5.722230] (interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.722428] (interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.731403] (interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.755089] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_c__pyext\n'}
+[5.755801] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[5.765701] (interfaces) StdoutLine: {'line': b'[100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.774805] (interfaces) CommandEnded: {'returncode': 0}
+[5.811971] (-) TimerEvent: {}
+[5.828748] (interfaces) JobProgress: {'identifier': 'interfaces', 'progress': 'install'}
+[5.835165] (interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/interfaces'], 'cwd': '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'peri'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peri'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'de_DE.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1746'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c2652ab1119353e706ae64d76488b3d3'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'peri'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peri'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/peri/anaconda3/bin:/home/peri/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/peri:@/tmp/.ICE-unix/1746,unix/peri:/tmp/.ICE-unix/1746'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/beb766fb_8e40_44fe_bef1_be62dcd2bfff'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QFXB61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.120'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peri/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peri/anaconda3/bin/conda'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=c2652ab1119353e706ae64d76488b3d3'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('CONDA_PREFIX', '/home/peri/anaconda3'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.840808] (interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.840979] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces\n'}
+[5.841079] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces\n'}
+[5.841173] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv\n'}
+[5.841233] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[5.841359] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__functions.h\n'}
+[5.841445] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__type_support.h\n'}
+[5.841514] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__functions.c\n'}
+[5.841581] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__struct.h\n'}
+[5.841650] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/calibrate_laser_import.h\n'}
+[5.841723] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.841788] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/image_pair.h\n'}
+[5.841855] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.841922] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.841989] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__functions.c\n'}
+[5.842055] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__struct.h\n'}
+[5.842124] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__struct.h\n'}
+[5.842189] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__functions.h\n'}
+[5.842255] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__functions.h\n'}
+[5.842322] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__type_support.h\n'}
+[5.842389] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__functions.c\n'}
+[5.842447] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__type_support.h\n'}
+[5.842518] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/camera_calibration_imgs.h\n'}
+[5.842571] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/environment/library_path.sh\n'}
+[5.842638] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/environment/library_path.dsv\n'}
+[5.842716] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_generator_c.so\n'}
+[5.843094] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""\n'}
+[5.843208] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces\n'}
+[5.843265] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv\n'}
+[5.843320] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[5.843395] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__rosidl_typesupport_fastrtps_c.h\n'}
+[5.843465] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.843531] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.843586] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.843652] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__rosidl_typesupport_fastrtps_c.h\n'}
+[5.843704] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__rosidl_typesupport_fastrtps_c.h\n'}
+[5.843759] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[5.843825] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.843920] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces\n'}
+[5.843975] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv\n'}
+[5.844041] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[5.844119] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__type_support.c\n'}
+[5.844175] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__rosidl_typesupport_introspection_c.h\n'}
+[5.844259] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.844314] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.844387] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.844441] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__type_support.c\n'}
+[5.844496] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__type_support.c\n'}
+[5.844563] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__rosidl_typesupport_introspection_c.h\n'}
+[5.844620] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__rosidl_typesupport_introspection_c.h\n'}
+[5.844677] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so\n'}
+[5.844744] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.844813] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so\n'}
+[5.844913] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""\n'}
+[5.845000] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces\n'}
+[5.845069] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv\n'}
+[5.845137] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[5.845205] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__traits.hpp\n'}
+[5.845274] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__builder.hpp\n'}
+[5.845352] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__struct.hpp\n'}
+[5.845420] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/calibrate_laser_import.hpp\n'}
+[5.845487] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.845554] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/image_pair.hpp\n'}
+[5.845622] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.845688] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__builder.hpp\n'}
+[5.845764] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__struct.hpp\n'}
+[5.845821] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__traits.hpp\n'}
+[5.845888] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__builder.hpp\n'}
+[5.845981] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__traits.hpp\n'}
+[5.846049] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__struct.hpp\n'}
+[5.846128] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/camera_calibration_imgs.hpp\n'}
+[5.846197] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces\n'}
+[5.846264] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv\n'}
+[5.846330] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[5.846397] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/dds_fastrtps\n'}
+[5.846463] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.846525] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.846595] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.846653] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.846708] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/dds_fastrtps\n'}
+[5.846776] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.846853] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.846922] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.846991] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.847077] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces\n'}
+[5.847137] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv\n'}
+[5.847215] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail\n'}
+[5.847283] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__type_support.cpp\n'}
+[5.847338] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/srv/detail/calibrate_laser_import__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.847408] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg\n'}
+[5.847483] (interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail\n'}
+[5.847543] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.847599] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.847655] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/image_pair__type_support.cpp\n'}
+[5.847737] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/include/interfaces/interfaces/msg/detail/camera_calibration_imgs__type_support.cpp\n'}
+[5.847842] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[5.848212] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.848292] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so\n'}
+[5.848361] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[5.848420] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/environment/pythonpath.sh\n'}
+[5.848506] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/environment/pythonpath.dsv\n'}
+[5.848574] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces-0.0.0-py3.10.egg-info\n'}
+[5.848645] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.848717] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.848811] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.848878] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.848941] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces\n'}
+[5.848996] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.849062] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.849128] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/srv\n'}
+[5.849195] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/srv/__init__.py\n'}
+[5.849261] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/srv/_calibrate_laser_import_s.c\n'}
+[5.849327] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/srv/_calibrate_laser_import.py\n'}
+[5.849393] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[5.849457] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/libinterfaces__rosidl_generator_py.so\n'}
+[5.849512] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.849579] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/msg\n'}
+[5.849644] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/msg/_camera_calibration_imgs_s.c\n'}
+[5.849710] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/msg/_camera_calibration_imgs.py\n'}
+[5.849775] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/msg/__init__.py\n'}
+[5.849840] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/msg/_image_pair.py\n'}
+[5.849906] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/msg/_image_pair_s.c\n'}
+[5.849975] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/__init__.py\n'}
+[5.850040] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.850107] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.882854] (interfaces) StdoutLine: {'line': b"Listing '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces'...\n"}
+[5.883044] (interfaces) StdoutLine: {'line': b"Compiling '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/__init__.py'...\n"}
+[5.883121] (interfaces) StdoutLine: {'line': b"Listing '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/msg'...\n"}
+[5.883186] (interfaces) StdoutLine: {'line': b"Compiling '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/msg/__init__.py'...\n"}
+[5.883242] (interfaces) StdoutLine: {'line': b"Compiling '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/msg/_camera_calibration_imgs.py'...\n"}
+[5.883300] (interfaces) StdoutLine: {'line': b"Compiling '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/msg/_image_pair.py'...\n"}
+[5.883353] (interfaces) StdoutLine: {'line': b"Listing '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/srv'...\n"}
+[5.883406] (interfaces) StdoutLine: {'line': b"Compiling '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/srv/__init__.py'...\n"}
+[5.883459] (interfaces) StdoutLine: {'line': b"Compiling '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/srv/_calibrate_laser_import.py'...\n"}
+[5.887062] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.887248] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.887381] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.887575] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.887701] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.887883] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/python3.10/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.888023] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_generator_py.so\n'}
+[5.888195] (interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_generator_py.so" to ""\n'}
+[5.888374] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/msg/CameraCalibrationImgs.idl\n'}
+[5.888474] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/msg/ImagePair.idl\n'}
+[5.888547] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/srv/CalibrateLaserImport.idl\n'}
+[5.888604] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/msg/CameraCalibrationImgs.msg\n'}
+[5.888703] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/msg/ImagePair.msg\n'}
+[5.888767] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/srv/CalibrateLaserImport.srv\n'}
+[5.888841] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/srv/CalibrateLaserImport_Request.msg\n'}
+[5.888929] (interfaces) StdoutLine: {'line': b'-- Installing: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/srv/CalibrateLaserImport_Response.msg\n'}
+[5.890661] (interfaces) CommandEnded: {'returncode': 0}
+[5.912050] (-) TimerEvent: {}
+[5.974958] (interfaces) JobEnded: {'identifier': 'interfaces', 'rc': 0}
+[5.975389] (-) EventReactorShutdown: {}

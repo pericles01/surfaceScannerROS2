@@ -1,0 +1,8 @@
+{
+  "package_name": "interfaces",
+  "non_idl_tuples": [
+    "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/interfaces:msg/CameraCalibrationImgs.msg",
+    "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/interfaces:msg/ImagePair.msg",
+    "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/interfaces:srv/CalibrateLaserImport.srv"
+  ]
+}

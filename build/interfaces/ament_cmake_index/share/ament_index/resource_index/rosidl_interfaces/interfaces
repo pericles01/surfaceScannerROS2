@@ -1,0 +1,8 @@
+msg/CameraCalibrationImgs.idl
+msg/CameraCalibrationImgs.msg
+msg/ImagePair.idl
+msg/ImagePair.msg
+srv/CalibrateLaserImport.idl
+srv/CalibrateLaserImport.srv
+srv/CalibrateLaserImport_Request.msg
+srv/CalibrateLaserImport_Response.msg
