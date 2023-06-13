@@ -3,6 +3,9 @@
 #include "std_srvs/srv/trigger.hpp"
 #include <cv_bridge/cv_bridge.h>
 #include "Scanner.hpp"
+#include "interfaces/msg/CameraCalibrationImgs.hpp"
+#include "interfaces/msg/ImagePair.hpp"
+#include "interfaces/srv/CalibrateLaserImport.hpp"
 
 class SurfaceScannerNode : public rclcpp::Node
 {
