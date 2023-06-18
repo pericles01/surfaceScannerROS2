@@ -3,10 +3,10 @@
 #include "std_srvs/srv/trigger.hpp"
 #include <cv_bridge/cv_bridge.h>
 #include "Scanner.hpp"
-#include <sensor_msgs/PointCloud2.h>
-#include "interfaces/msg/CameraCalibrationImgs.hpp"
-#include "interfaces/msg/ImagePair.hpp"
-#include "interfaces/srv/CalibrateLaserImport.hpp"
+#include <sensor_msgs/msg/point_cloud2.hpp>
+#include "interfaces/msg/image_pair.hpp"
+#include "interfaces/msg/camera_calibration_imgs.hpp"
+#include "interfaces/srv/calibrate_laser_import.hpp"
 
 using std::placeholders::_1;
 
@@ -24,8 +24,8 @@ private:
     rclcpp::Service<interfaces::srv::CalibrateLaserImport>::SharedPtr m_calibrateLaserWithImportSrv;
     rclcpp::Subscription<interfaces::msg::ImagePair>::SharedPtr imgPairSub;
     rclcpp::Subscription<interfaces::msg::CameraCalibrationImgs>::SharedPtr camCalibrateImgsSub;
-    rclcpp::Publisher<sensor_msgs::PointCloud2>::SharedPtr pcdPub;
-    rclcpp::Publisher<sensor_msgs::PointCloud2>::SharedPtr laserPlanePub;
+    rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pcdPub;
+    rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr laserPlanePub;
     void calibrateScannerSrvCallback(const std::shared_ptr<std_srvs::srv::Trigger::Request> request, std::shared_ptr<std_srvs::srv::Trigger::Response> response);
     void calibrateWithImportSrvCallback(const std::shared_ptr<interfaces::srv::CalibrateLaserImport::Request> request, std::shared_ptr<interfaces::srv::CalibrateLaserImport::Response> response);
     void imagePairCallback(const interfaces::msg::ImagePair & msg);
@@ -46,9 +46,9 @@ SurfaceScannerNode::SurfaceScannerNode():Node("SurfaceScannerNode"), m_Scanner(S
 
     camCalibrateImgsSub = create_subscription("cam_calib_imgs", 10, std::bind(&camCalibImgsCallback, this, _1));
 
-    pcdPub = create_publisher<sensor_msgs::PointCloud2>('surface_line', 10);
+    pcdPub = create_publisher<sensor_msgs::msg::PointCloud2>('surface_line', 10);
 
-    laserPlanePub = create_publisher<sensor_msgs::PointCloud2>('laser_plane', 10);
+    laserPlanePub = create_publisher<sensor_msgs::msg::PointCloud2>('laser_plane', 10);
 
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Surface-Scanner-Node ready!");
 }
@@ -71,10 +71,10 @@ void SurfaceScannerNode::calibrateScannerSrvCallback(const std::shared_ptr<std_s
     else{
         m_Scanner.calibrateScanner(m_calibImgs, m_originImg, m_laserImg);
 
-        if(!m_Scanner.isScannerCalibrated(){
+        if(!m_Scanner.isScannerCalibrated()){
             response->success = false;
             response->message = "Scanner calibration unsuccessful!";
-        })
+        }
         else{
             //ToDo publish point cloud
             //RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Publishing point cloud to display the laser plane! -> Topic: laser_plane");
@@ -121,7 +121,7 @@ void SurfaceScannerNode::imagePairCallback(const interfaces::msg::ImagePair & ms
         }
         catch (cv_bridge::Exception& e)
         {
-            ROS_ERROR(e.what());
+               RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), e.what());
         }
     }
     else{
@@ -134,7 +134,7 @@ void SurfaceScannerNode::imagePairCallback(const interfaces::msg::ImagePair & ms
             }
             catch (cv_bridge::Exception& e)
             {
-                ROS_ERROR(e.what());
+                 RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), e.what());
             }
             // ToDo generate point cloud
         }
@@ -144,7 +144,7 @@ void SurfaceScannerNode::imagePairCallback(const interfaces::msg::ImagePair & ms
 }
 
 void SurfaceScannerNode::camCalibImgsCallback(const interfaces::msg::CameraCalibrationImgs & msg){
-    for(std::size_t i=0, i<msg.imgs.size(), ++i){
+    for(std::size_t i=0; i<msg.imgs.size(); ++i){
         m_calibImgs.push_back(cv_bridge::toCvCopy(msg.imgs[i], "bgr8")->image);
     }
     RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Recieved list with: "<<msg.imgs.size()<<" images for intrinsic camera calibration!");

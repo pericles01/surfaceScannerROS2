@@ -16,5 +16,11 @@ find_package(image_transport REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(pcl_ros REQUIRED)
+find_package(interfaces REQUIRED)
+
+add_executable(camera_node src/camera_node.cpp)
+ament_target_dependencies(camera_node OpenCV interfaces
+                          cv_bridge sensor_msgs rclcpp std_srvs)
+
 
 ament_package()
