@@ -22,5 +22,13 @@ add_executable(camera_node src/camera_node.cpp)
 ament_target_dependencies(camera_node OpenCV interfaces
                           cv_bridge sensor_msgs rclcpp std_srvs)
 
+add_executable(surface_scanner_node src/SurfaceScannerNode.cpp)
+ament_target_dependencies(surface_scanner_node OpenCV interfaces
+                          cv_bridge sensor_msgs rclcpp std_srvs std_msgs pcl_ros pcl_conversions)
+
+install(TARGETS
+  camera_node
+  surface_scanner_node
+  DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

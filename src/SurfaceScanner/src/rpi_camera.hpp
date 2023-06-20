@@ -16,12 +16,15 @@ public:
     ~Camera(){ cam.release(); }
     
     Mat get_raw_image();
-    void calibrate_Camera();
+    void calibrate_Camera(const std::vector<cv::Mat> &images, const bool &safe_data_in_npz=true);
     void importCameraParams(const string& src);
     Mat get_cam_mtx() const;
     Mat get_dist() const;
     Mat get_rot_mtx_at(int index) const;
     Mat get_tvec_at(int index) const;
+
+    void set_savePath(const String& path){ m_savePath=path;};
+    String get_savePath()const {return m_savePath;};
     
 private:
     Mat m_cam_mtx;
@@ -31,6 +34,7 @@ private:
     
     VideoCapture cam;
     Mat m_imageFrame;
+    String m_savePath;
 };
 
 Camera::Camera(const string& src = "None") {
@@ -46,7 +50,7 @@ void Camera::importCameraParams(const string& src){
 		fs["rvecs"] >> v_rvecs;
 		fs["tvecs"] >> v_tvecs;
     }
-    catch(const exception &e){
+    catch(const cv::Exception &e){
         cerr<<e.what();
     }
 }
@@ -63,7 +67,7 @@ Mat Camera::get_raw_image(){
 	return m_imageFrame;
 }
 
-void Camera::calibrate_Camera(){
+void Camera::calibrate_Camera(const std::vector<cv::Mat> &images, const bool &safe_data_in_npz){
 	int CHECKERBOARD[2]{6,9};
 
     vector<vector<Point3f>> objpoints;
@@ -74,17 +78,17 @@ void Camera::calibrate_Camera(){
         for (int j = 0; j < CHECKERBOARD[0]; j++)
             objp.push_back(Point3f(j, i, 0));
     }
+    /*
     vector<String> images;
     string path = "./chessboard_images/*.png";
     glob(path, images);
+    */
     Mat frame, gray;
     vector<Point2f> corner_pts;
     bool success;
-    for (int i = 0; i < images.size(); i++)
+    for (std::size_t i = 0; i < images.size(); i++)
     {
-        frame = imread(images[i]);
-        cvtColor(frame, gray, COLOR_BGR2GRAY);
-        success = findChessboardCorners(gray, Size(CHECKERBOARD[0], CHECKERBOARD[1]), corner_pts, CALIB_CB_ADAPTIVE_THRESH | CALIB_CB_FAST_CHECK | CALIB_CB_NORMALIZE_IMAGE);
+        success = findChessboardCorners(images[i], Size(CHECKERBOARD[0], CHECKERBOARD[1]), corner_pts, CALIB_CB_ADAPTIVE_THRESH | CALIB_CB_FAST_CHECK | CALIB_CB_NORMALIZE_IMAGE);
         if (success)
         {
             TermCriteria criteria(TermCriteria::EPS | TermCriteria::COUNT, 30, 0.001);
@@ -98,14 +102,17 @@ void Camera::calibrate_Camera(){
 
     calibrateCamera(objpoints, imgpoints, gray.size(), m_cam_mtx, m_dist, v_rvecs, v_tvecs);
     
-    FileStorage fs("./camera_params.npz", cv::FileStorage::WRITE);
-	fs << "mtx" << m_cam_mtx;
-	fs << "dist" << m_dist;
-	fs << "rvecs" << v_rvecs;
-	fs << "tvecs" << v_tvecs;
-	fs.release();
-	
-	std::cout << "INFO: Camera-Params saved in 'camera_params.npz'!" << std::endl;
+    if(safe_data_in_npz){
+        assert((void("Warning!!! the save path is not defined yet! Use the Camera::set_savePath(path) method"), !m_savePath.empty()));
+        FileStorage fs("./camera_params.npz", cv::FileStorage::WRITE);
+        fs << "mtx" << m_cam_mtx;
+        fs << "dist" << m_dist;
+        fs << "rvecs" << v_rvecs;
+        fs << "tvecs" << v_tvecs;
+        fs.release();
+        
+        std::cout << "INFO: Camera-Params saved in 'camera_params.npz'!" << std::endl;  
+    }
 
 }
 

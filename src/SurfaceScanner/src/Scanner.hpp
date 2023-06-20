@@ -53,14 +53,14 @@ public:
     */
     void generatePcd(const cv::Mat &surface_img, const cv::Mat &surface_img_laser);
     //ToDo
-    pcl::PCLPointCloud2ConstPtr &get_pcd() const;
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr get_pcd() const;
     void updatePcd(const cv::Mat &surface_koords, const cv::Mat &point_colors);
 
 private:
     Laser m_Laser;
     bool m_Calibrated;
     Camera m_Camera;
-    pcl::PCLPointCloud2::Ptr m_CurrentSurface;
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr m_CurrentSurface;
 
     /*
         Generates the surface koordinates using the plane equation.
@@ -68,7 +68,7 @@ private:
     void generateSurfaceLineKoordinates(const cv::Mat &surface_img, const cv::Mat &surface_img_laser, cv::Mat & surface_koords, cv::Mat & point_colors);
 };
 
-Scanner::Scanner(): m_Calibrated(false), m_Laser(Laser()), m_Camera(Camera()), m_CurrentSurface(new pcl::PCLPointCloud2()){
+Scanner::Scanner(): m_Calibrated(false), m_Laser(Laser()), m_Camera(Camera()), m_CurrentSurface(new pcl::PointCloud<pcl::PointXYZRGB>()){
 
 }
 
@@ -107,9 +107,8 @@ void Scanner::generateSurfaceLineKoordinates(const cv::Mat &surface_img, const c
 
     cv::undistort(surface_img, undistorted_img, cameraMatrix, distCoeffs);
     cv::undistort(surface_img_laser, undistorted_img_laser, cameraMatrix, distCoeffs);
-
-    LaserLine LaserUp(m_Laser.get_up());
-    LaserLine surfaceLine(undistorted_img, undistorted_img, LaserUp.get_rotMatrix(), LaserUp.get_tVec());
+    
+    LaserLine surfaceLine(undistorted_img, undistorted_img, m_Laser.get_up().get_rotMatrix(), m_Laser.get_up().get_tVec());
 
     cv::Mat points_surface = utility::bild2world(surfaceLine.get_laserPoints(), surfaceLine.get_tVec(), surfaceLine.get_rotMatrix(), cameraMatrix, m_Laser.get_planeEq());
     surface_koords = utility::world2cam(points_surface, surfaceLine.get_tVec(), surfaceLine.get_rotMatrix());
@@ -122,7 +121,7 @@ bool Scanner::isScannerCalibrated() const{
 
 
 void Scanner::calibrateScanner(const std::vector<cv::Mat> &images, const cv::Mat &calibration_img, const cv::Mat &calibration_img_laser, const bool &safe_data_in_npz){
-    m_Camera.calibrate_Camera(); //images, safe_data_in_npz
+    m_Camera.calibrate_Camera(images, safe_data_in_npz);
     m_Calibrated = calibrateLaser(calibration_img, calibration_img_laser);
 }
 
@@ -239,12 +238,14 @@ bool Scanner::calibrateLaser(const cv::Mat &calibration_img, const cv::Mat &cali
     cv::imwrite("./src/ros2_surface_scanner/surface_scanner/out/extrinsic_calibration/charuco_cut_secondary.png", charuco_cut_secondary);
 
     // Fill in laser-line parameter in laser
-    m_laser.set_up(LaserLine(charuco_board, charuco_board_laser, std::get<1>(poseFirstBoard), std::get<2>(poseFirstBoard), std::get<3>(poseFirstBoard)));
-    m_laser.set_down(LaserLine(charuco_board, charuco_board_laser, std::get<1>(poseSecondBoard), std::get<2>(poseSecondBoard), std::get<3>(poseSecondBoard)));
+    LaserLine up(charuco_board, charuco_board_laser, std::get<1>(poseFirstBoard), std::get<2>(poseFirstBoard), std::get<3>(poseFirstBoard));
+    m_Laser.set_up(up);
+    LaserLine down(charuco_board, charuco_board_laser, std::get<1>(poseSecondBoard), std::get<2>(poseSecondBoard), std::get<3>(poseSecondBoard));
+    m_Laser.set_down(down);
 
-    m_laser.computePlaneEq(cameraMatrix);
+    m_Laser.computePlaneEq(cameraMatrix);
 
-    cv::Mat plane_eq = m_laser.get_planeEq();
+    cv::Mat plane_eq = m_Laser.get_planeEq();
     std::cout << "INFO: Laser-plane calibrated with equation:\n" << plane_eq.at<double>(0) << " * X  +  " << plane_eq.at<double>(1) << " * Y  + " << plane_eq.at<double>(2) << " * Z  =  " << plane_eq.at<double>(3) << std::endl;
     
     return true;
@@ -257,7 +258,7 @@ void Scanner::generatePcd(const cv::Mat &surface_img, const cv::Mat &surface_img
     std::cout<<"INFO: Finished point cloud generation!"<<std::endl;
 }
 
-pcl::PCLPointCloud2ConstPtr &Scanner::get_pcd() const{
+pcl::PointCloud<pcl::PointXYZRGB>::Ptr Scanner::get_pcd() const{
     return m_CurrentSurface;
 }
 

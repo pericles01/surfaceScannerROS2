@@ -1,0 +1,23 @@
+[0.011s] Invoking command in '/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/interfaces -- -j8 -l8
+[0.049s] [  2%] Built target interfaces__cpp
+[0.049s] [ 12%] Built target interfaces__rosidl_generator_c
+[0.059s] [ 12%] Built target ament_cmake_python_copy_interfaces
+[0.085s] [ 23%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[0.088s] [ 34%] Built target interfaces__rosidl_typesupport_cpp
+[0.091s] [ 44%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[0.097s] [ 55%] Built target interfaces__rosidl_typesupport_c
+[0.097s] [ 74%] Built target interfaces__rosidl_typesupport_introspection_c
+[0.097s] [ 76%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[0.114s] [ 76%] Built target interfaces
+[0.130s] [ 78%] Built target interfaces__py
+[0.147s] [ 87%] Built target interfaces__rosidl_generator_py
+[0.166s] [ 91%] Built target interfaces__rosidl_typesupport_introspection_c__pyext
+[0.169s] [ 95%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.169s] [100%] Built target interfaces__rosidl_typesupport_c__pyext
+[0.487s] running egg_info
+[0.505s] writing interfaces.egg-info/PKG-INFO
+[0.505s] writing dependency_links to interfaces.egg-info/dependency_links.txt
+[0.506s] writing top-level names to interfaces.egg-info/top_level.txt
+[0.572s] reading manifest file 'interfaces.egg-info/SOURCES.txt'
+[0.573s] writing manifest file 'interfaces.egg-info/SOURCES.txt'
+[0.614s] [100%] Built target ament_cmake_python_build_interfaces_egg

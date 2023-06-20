@@ -1,5 +1,7 @@
 /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/uninstall.dir
 /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/SurfaceScanner_uninstall.dir
+/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/camera_node.dir
+/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/surface_scanner_node.dir
 /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/test.dir
 /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/edit_cache.dir
 /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles/rebuild_cache.dir

@@ -1,5 +1,4 @@
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
 #include "std_srvs/srv/trigger.hpp"
 #include <cv_bridge/cv_bridge.h>
 #include "Scanner.hpp"
@@ -14,7 +13,6 @@ class SurfaceScannerNode : public rclcpp::Node
 {
 public:
     SurfaceScannerNode();
-    //void calibrateScannerSrv();
 private:
     Scanner m_Scanner;
     cv::Mat m_originImg, m_laserImg;
@@ -38,17 +36,17 @@ private:
 
 SurfaceScannerNode::SurfaceScannerNode():Node("SurfaceScannerNode"), m_Scanner(Scanner()), m_originImg(defaultMat), m_laserImg(defaultMat), m_calibImgs(std::vector<cv::Mat>())
 {
-    m_calibrateScannerSrv = create_service("calibrate_scanner", &calibrateScannerSrvCallback);
+    m_calibrateScannerSrv = create_service<std_srvs::srv::Trigger>("calibrate_scanner", &SurfaceScannerNode::calibrateScannerSrvCallback);
 
-    m_calibrateLaserWithImportSrv = create_service("calibrate_with_import", &calibrateWithImportSrvCallback);
+    m_calibrateLaserWithImportSrv = create_service<interfaces::srv::CalibrateLaserImport>("calibrate_with_import", &SurfaceScannerNode::calibrateWithImportSrvCallback);
     
-    imgPairSub = create_subscription("img_pair", 10, std::bind(&imagePairCallback, this, _1));
+    imgPairSub = create_subscription<interfaces::msg::ImagePair>("img_pair", 10, std::bind(&SurfaceScannerNode::imagePairCallback, this, _1));
 
-    camCalibrateImgsSub = create_subscription("cam_calib_imgs", 10, std::bind(&camCalibImgsCallback, this, _1));
+    camCalibrateImgsSub = create_subscription<interfaces::msg::CameraCalibrationImgs>("cam_calib_imgs", 10, std::bind(&SurfaceScannerNode::camCalibImgsCallback, this, _1));
 
-    pcdPub = create_publisher<sensor_msgs::msg::PointCloud2>('surface_line', 10);
+    pcdPub = create_publisher<sensor_msgs::msg::PointCloud2>("surface_line", 10);
 
-    laserPlanePub = create_publisher<sensor_msgs::msg::PointCloud2>('laser_plane', 10);
+    laserPlanePub = create_publisher<sensor_msgs::msg::PointCloud2>("laser_plane", 10);
 
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Surface-Scanner-Node ready!");
 }
@@ -144,8 +142,8 @@ void SurfaceScannerNode::imagePairCallback(const interfaces::msg::ImagePair & ms
 }
 
 void SurfaceScannerNode::camCalibImgsCallback(const interfaces::msg::CameraCalibrationImgs & msg){
-    for(std::size_t i=0; i<msg.imgs.size(); ++i){
-        m_calibImgs.push_back(cv_bridge::toCvCopy(msg.imgs[i], "bgr8")->image);
+    for(const auto& img : msg.imgs){
+        m_calibImgs.push_back(cv_bridge::toCvCopy(img, "bgr8")->image);
     }
     RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Recieved list with: "<<msg.imgs.size()<<" images for intrinsic camera calibration!");
 }

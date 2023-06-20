@@ -10,10 +10,10 @@ LaserLine defaultLaserLine = LaserLine();
 class Laser{
 public:
     Laser();
-    void set_up(const LaserLine &up);
-    LaserLine get_up() const;
-    void set_down(LaserLine down);
-    LaserLine get_down() const;
+    void set_up(LaserLine up){m_up = up;};
+    LaserLine get_up() const{return m_up;};
+    void set_down(LaserLine down){m_down = down;};
+    LaserLine get_down() const{return m_down;};
     cv::Mat get_planeEq() const;
     void fitPlane();
     void computePlanePoints(const cv::Mat &cameraMatrix);
@@ -27,22 +27,6 @@ private:
 
 Laser::Laser(): m_up(defaultLaserLine), m_down(defaultLaserLine), m_points(defaultMat), m_planeEq(defaultMat){
 
-}
-
-void Laser::set_up(const LaserLine &up){
-    m_up = up;
-}
-
-LaserLine Laser::get_up() const{
-    return m_up;
-}
-
-void Laser::set_down(LaserLine down){
-    m_down = down;
-}
-
-LaserLine Laser::get_down() const{
-    return m_down;
 }
 
 cv::Mat Laser::get_planeEq() const{

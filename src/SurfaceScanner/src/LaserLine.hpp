@@ -1,8 +1,5 @@
 #include "Utility.hpp"
 
-using smartCvMat = std::shared_ptr<cv::Mat>;
-using smartLaserLine = std::shared_ptr<LaserLine>;
-
 
 /*
     Representation of a laser line.
@@ -21,7 +18,7 @@ public:
     LaserLine(const LaserLine &other);
     // copy assignment (copy-and-swap idiom)
     //LaserLine &operator=(LaserLine other)noexcept;
-    LaserLine &operator=(const LaserLine &other);
+    LaserLine &operator=(const LaserLine& other);
     ~LaserLine();
     // getters
     cv::Mat get_laserPoints() const;
@@ -77,7 +74,11 @@ cv::Mat LaserLine::get_tVec() const{
     return m_tVec;
 }
 
-LaserLine &LaserLine::operator=(const LaserLine &other){
+LaserLine &LaserLine::operator=(const LaserLine& other){
+    // Guard self assignment
+    if (this == &other)
+        return *this;
+
     m_ImgDiffLaser = other.m_ImgDiffLaser;
     m_tVec = other.m_tVec;
     m_laserPoints = other.m_laserPoints;

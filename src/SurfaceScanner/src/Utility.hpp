@@ -1,7 +1,7 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/core.hpp>
 
-const cv::Mat defaultMat = cv::Mat();//cv::Mat::zeros(cv::Size(3,3), CV_8U);
+const cv::Mat defaultMat = cv::Mat();
 
 namespace utility{
     

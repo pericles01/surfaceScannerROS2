@@ -16,11 +16,11 @@ class RPI_Camera_node : public rclcpp::Node
 {
   public: RPI_Camera_node() : Node("camera_node"){
 
-    srv_send_cam_calib_imgs = create_service<std_srvs::srv::Trigger>("send_cam_calib_imgs", &send_cam_calib_imgs);
-    srv_send_img_pair_calib = create_service<std_srvs::srv::Trigger>("send_img_pair_calib", &send_img_pair_calib);
-    srv_send_img_pair_surface = create_service<std_srvs::srv::Trigger>("send_img_pair_surface", &send_img_pair_surface);
-    srv_start_img_stream = create_service<std_srvs::srv::Trigger>("start_img_stream", &start_img_stream);
-    srv_stop_img_stream = create_service<std_srvs::srv::Trigger>("stop_img_stream", &send_img_pair_calib);
+    srv_send_cam_calib_imgs = create_service<std_srvs::srv::Trigger>("send_cam_calib_imgs", &RPI_Camera_node::send_cam_calib_imgs);
+    srv_send_img_pair_calib = create_service<std_srvs::srv::Trigger>("send_img_pair_calib", &RPI_Camera_node::send_img_pair_calib);
+    srv_send_img_pair_surface = create_service<std_srvs::srv::Trigger>("send_img_pair_surface", &RPI_Camera_node::send_img_pair_surface);
+    srv_start_img_stream = create_service<std_srvs::srv::Trigger>("start_img_stream", &RPI_Camera_node::start_img_stream);
+    srv_stop_img_stream = create_service<std_srvs::srv::Trigger>("stop_img_stream", &RPI_Camera_node::send_img_pair_calib);
 
     pub_img = create_publisher<sensor_msgs::msg::Image>("img_publisher", 10);          
     pub_imgPair = create_publisher<msg::ImagePair>("img_pair", 10);                    
