@@ -197,6 +197,80 @@ SurfaceScanner_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SurfaceScanner_uninstall.dir/build.make CMakeFiles/SurfaceScanner_uninstall.dir/build
 .PHONY : SurfaceScanner_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named camera_node
+
+# Build rule for target.
+camera_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 camera_node
+.PHONY : camera_node
+
+# fast build rule for target.
+camera_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_node.dir/build.make CMakeFiles/camera_node.dir/build
+.PHONY : camera_node/fast
+
+#=============================================================================
+# Target rules for targets named surface_scanner_node
+
+# Build rule for target.
+surface_scanner_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 surface_scanner_node
+.PHONY : surface_scanner_node
+
+# fast build rule for target.
+surface_scanner_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_scanner_node.dir/build.make CMakeFiles/surface_scanner_node.dir/build
+.PHONY : surface_scanner_node/fast
+
+src/camera_node.o: src/camera_node.cpp.o
+.PHONY : src/camera_node.o
+
+# target to build an object file
+src/camera_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_node.dir/build.make CMakeFiles/camera_node.dir/src/camera_node.cpp.o
+.PHONY : src/camera_node.cpp.o
+
+src/camera_node.i: src/camera_node.cpp.i
+.PHONY : src/camera_node.i
+
+# target to preprocess a source file
+src/camera_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_node.dir/build.make CMakeFiles/camera_node.dir/src/camera_node.cpp.i
+.PHONY : src/camera_node.cpp.i
+
+src/camera_node.s: src/camera_node.cpp.s
+.PHONY : src/camera_node.s
+
+# target to generate assembly for a file
+src/camera_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_node.dir/build.make CMakeFiles/camera_node.dir/src/camera_node.cpp.s
+.PHONY : src/camera_node.cpp.s
+
+src/surface_scanner_node.o: src/surface_scanner_node.cpp.o
+.PHONY : src/surface_scanner_node.o
+
+# target to build an object file
+src/surface_scanner_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_scanner_node.dir/build.make CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o
+.PHONY : src/surface_scanner_node.cpp.o
+
+src/surface_scanner_node.i: src/surface_scanner_node.cpp.i
+.PHONY : src/surface_scanner_node.i
+
+# target to preprocess a source file
+src/surface_scanner_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_scanner_node.dir/build.make CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.i
+.PHONY : src/surface_scanner_node.cpp.i
+
+src/surface_scanner_node.s: src/surface_scanner_node.cpp.s
+.PHONY : src/surface_scanner_node.s
+
+# target to generate assembly for a file
+src/surface_scanner_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_scanner_node.dir/build.make CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.s
+.PHONY : src/surface_scanner_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +286,14 @@ help:
 	@echo "... test"
 	@echo "... SurfaceScanner_uninstall"
 	@echo "... uninstall"
+	@echo "... camera_node"
+	@echo "... surface_scanner_node"
+	@echo "... src/camera_node.o"
+	@echo "... src/camera_node.i"
+	@echo "... src/camera_node.s"
+	@echo "... src/surface_scanner_node.o"
+	@echo "... src/surface_scanner_node.i"
+	@echo "... src/surface_scanner_node.s"
 .PHONY : help
 
 

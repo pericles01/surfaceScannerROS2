@@ -1,4 +1,4 @@
-#include "camera_node.hpp"
+#include "SurfaceScanner/camera_node.hpp"
 
 Mat RPI_Camera_node::get_image(){
   Mat img;
