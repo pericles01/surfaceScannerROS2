@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o"
-  "CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o.d"
+  "CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o"
+  "CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o.d"
   "surface_scanner_node"
   "surface_scanner_node.pdb"
 )

@@ -18,17 +18,24 @@ find_package(pcl_conversions REQUIRED)
 find_package(pcl_ros REQUIRED)
 find_package(interfaces REQUIRED)
 
+include_directories(include)
+
 add_executable(camera_node src/camera_node.cpp)
 ament_target_dependencies(camera_node OpenCV interfaces
                           cv_bridge sensor_msgs rclcpp std_srvs)
 
-add_executable(surface_scanner_node src/SurfaceScannerNode.cpp)
+add_executable(surface_scanner_node src/surface_scanner_node.cpp)
 ament_target_dependencies(surface_scanner_node OpenCV interfaces
                           cv_bridge sensor_msgs rclcpp std_srvs std_msgs pcl_ros pcl_conversions)
+install(
+  DIRECTORY include/SurfaceScanner
+  DESTINATION include
+)
 
 install(TARGETS
   camera_node
   surface_scanner_node
-  DESTINATION lib/${PROJECT_NAME})
+  DESTINATION lib/${PROJECT_NAME}
+  INCLUDES DESTINATION include)
 
 ament_package()

@@ -69,28 +69,28 @@ include CMakeFiles/surface_scanner_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/surface_scanner_node.dir/flags.make
 
-CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o: CMakeFiles/surface_scanner_node.dir/flags.make
-CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o: /home/peri/Desktop/Studium/ROS\ Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/SurfaceScannerNode.cpp
-CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o: CMakeFiles/surface_scanner_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o -MF CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o.d -o CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o -c "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/SurfaceScannerNode.cpp"
+CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o: CMakeFiles/surface_scanner_node.dir/flags.make
+CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o: /home/peri/Desktop/Studium/ROS\ Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/surface_scanner_node.cpp
+CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o: CMakeFiles/surface_scanner_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o -MF CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o.d -o CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o -c "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/surface_scanner_node.cpp"
 
-CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/SurfaceScannerNode.cpp" > CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.i
+CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/surface_scanner_node.cpp" > CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.i
 
-CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/SurfaceScannerNode.cpp" -o CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.s
+CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/surface_scanner_node.cpp" -o CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.s
 
 # Object files for target surface_scanner_node
 surface_scanner_node_OBJECTS = \
-"CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o"
+"CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o"
 
 # External object files for target surface_scanner_node
 surface_scanner_node_EXTERNAL_OBJECTS =
 
-surface_scanner_node: CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o
+surface_scanner_node: CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o
 surface_scanner_node: CMakeFiles/surface_scanner_node.dir/build.make
 surface_scanner_node: /home/peri/Desktop/Studium/ROS\ Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
 surface_scanner_node: /home/peri/Desktop/Studium/ROS\ Robotik/SurfaceScanner_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so

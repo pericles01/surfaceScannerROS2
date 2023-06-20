@@ -1,7 +1,7 @@
 CMakeFiles/camera_node.dir/src/camera_node.cpp.o: \
  /home/peri/Desktop/Studium/ROS\ Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/camera_node.cpp \
  /usr/include/stdc-predef.h \
- /home/peri/Desktop/Studium/ROS\ Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/camera_node.hpp \
+ /home/peri/Desktop/Studium/ROS\ Robotik/SurfaceScanner_ws/src/SurfaceScanner/include/SurfaceScanner/camera_node.hpp \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \

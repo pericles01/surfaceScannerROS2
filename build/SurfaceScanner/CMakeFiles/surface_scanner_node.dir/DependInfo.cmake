@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/SurfaceScannerNode.cpp" "CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o" "gcc" "CMakeFiles/surface_scanner_node.dir/src/SurfaceScannerNode.cpp.o.d"
+  "/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/src/SurfaceScanner/src/surface_scanner_node.cpp" "CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o" "gcc" "CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o.d"
   )
 
 # Targets to which this target links.
