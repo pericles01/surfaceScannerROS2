@@ -72,23 +72,26 @@ Scanner::Scanner(): m_Calibrated(false), m_Laser(Laser()), m_Camera(Camera()), m
 
 }
 
+/*
+    pts_laser ist a 1*3 matrix
+*/
 cv::Mat Scanner::getPixelColors(const cv::Mat &pts_laser, const cv::Mat &img_original) const{
     
     cv::Mat color_values, pts;
-    cv::Vec3b color_rounded_pix, color_next_pix, weighted_color;
-    double decimal_place, decimal_place_reverse;
+    cv::Vec3f color_rounded_pix, color_next_pix, weighted_color;
+    float decimal_place, decimal_place_reverse;
 
     for (int i = 0; i < pts_laser.rows; i++) {
         pts_laser.row(i).copyTo(pts);
         decimal_place = pts.at<double>(0) - pts.at<int>(0);
         decimal_place_reverse = 1 - decimal_place;
 
-        color_rounded_pix = img_original.at<cv::Vec3b>(pts.at<int>(1), pts.at<int>(0)) / 255.0;
+        color_rounded_pix = img_original.at<cv::Vec3f>(pts.at<int>(1), pts.at<int>(0)) / 255;
 
         if (pts.at<int>(0) >= img_original.cols - 1) {
             color_next_pix = color_rounded_pix;
         } else {
-            color_next_pix = img_original.at<cv::Vec3b>(pts.at<double>(1), pts.at<double>(0) + 1) / 255.0;
+            color_next_pix = img_original.at<cv::Vec3f>(pts.at<double>(1), pts.at<double>(0) + 1) / 255;
         }
 
         weighted_color = (color_rounded_pix * decimal_place_reverse) + (color_next_pix * decimal_place);
@@ -110,9 +113,9 @@ void Scanner::generateSurfaceLineKoordinates(const cv::Mat &surface_img, const c
     
     LaserLine surfaceLine(undistorted_img, undistorted_img, m_Laser.get_up().get_rotMatrix(), m_Laser.get_up().get_tVec());
 
-    cv::Mat points_surface = utility::bild2world(surfaceLine.get_laserPoints(), surfaceLine.get_tVec(), surfaceLine.get_rotMatrix(), cameraMatrix, m_Laser.get_planeEq());
-    surface_koords = utility::world2cam(points_surface, surfaceLine.get_tVec(), surfaceLine.get_rotMatrix());
-    point_colors = getPixelColors(surfaceLine.get_laserPoints().t(), surface_img);
+    cv::Mat points_surface = utility::bild2world(surfaceLine.get_laserPoints().t(), surfaceLine.get_tVec(), surfaceLine.get_rotMatrix(), cameraMatrix, m_Laser.get_planeEq());
+    surface_koords = utility::world2cam(points_surface, surfaceLine.get_tVec(), surfaceLine.get_rotMatrix()); // 3*1 matrix
+    point_colors = getPixelColors(surfaceLine.get_laserPoints().t(), surface_img); // 3*1 matrix
 }   
 
 bool Scanner::isScannerCalibrated() const{
@@ -254,7 +257,7 @@ bool Scanner::calibrateLaser(const cv::Mat &calibration_img, const cv::Mat &cali
 void Scanner::generatePcd(const cv::Mat &surface_img, const cv::Mat &surface_img_laser){
     cv::Mat surface_koords, point_colors;
     generateSurfaceLineKoordinates(surface_img, surface_img_laser, surface_koords, point_colors);
-    //updatePcd(surface_koords.t(), point_colors);
+    updatePcd(surface_koords.t(), point_colors);
     std::cout<<"INFO: Finished point cloud generation!"<<std::endl;
 }
 
@@ -262,6 +265,17 @@ pcl::PointCloud<pcl::PointXYZRGB>::Ptr Scanner::get_pcd() const{
     return m_CurrentSurface;
 }
 
+/*
+    takes two 3*1 or 1*3 matrixes as argument and update the point cloud
+*/
 void Scanner::updatePcd(const cv::Mat &surface_koords, const cv::Mat &point_colors){
-    //m_CurrentSurface
+    pcl::PointXYZRGB point;
+    point.x = surface_koords.at<float>(0);
+    point.y = surface_koords.at<float>(1);
+    point.z = surface_koords.at<float>(2);
+    point.r = point_colors.at<std::uint8_t>(0);
+    point.g = point_colors.at<std::uint8_t>(1);
+    point.b = point_colors.at<std::uint8_t>(2);
+    
+    m_CurrentSurface->push_back(point);
 }
