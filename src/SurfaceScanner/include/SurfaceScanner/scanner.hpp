@@ -73,7 +73,7 @@ Scanner::Scanner(): m_Calibrated(false), m_Laser(Laser()), m_Camera(Camera()), m
 }
 
 /*
-    pts_laser ist a 1*3 matrix
+    pts_laser ist a n*3 matrix
 */
 cv::Mat Scanner::getPixelColors(const cv::Mat &pts_laser, const cv::Mat &img_original) const{
     
@@ -99,7 +99,7 @@ cv::Mat Scanner::getPixelColors(const cv::Mat &pts_laser, const cv::Mat &img_ori
         color_values.push_back(weighted_color);
     }
 
-    return color_values;
+    return color_values; 
 }
 
 void Scanner::generateSurfaceLineKoordinates(const cv::Mat &surface_img, const cv::Mat &surface_img_laser, cv::Mat &surface_koords, cv::Mat &point_colors){

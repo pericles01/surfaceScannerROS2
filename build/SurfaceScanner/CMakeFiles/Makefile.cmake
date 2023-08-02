@@ -1099,4 +1099,11 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/SurfaceScanner_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/camera_node.dir/DependInfo.cmake"
   "CMakeFiles/surface_scanner_node.dir/DependInfo.cmake"
+  "CMakeFiles/calibrate.dir/DependInfo.cmake"
+  "CMakeFiles/calibrate_with_import.dir/DependInfo.cmake"
+  "CMakeFiles/start_img_stream.dir/DependInfo.cmake"
+  "CMakeFiles/stop_img_stream.dir/DependInfo.cmake"
+  "CMakeFiles/intr_calibration.dir/DependInfo.cmake"
+  "CMakeFiles/extr_calibration.dir/DependInfo.cmake"
+  "CMakeFiles/surface_line_imgs.dir/DependInfo.cmake"
   )

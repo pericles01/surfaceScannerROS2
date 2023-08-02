@@ -223,6 +223,145 @@ surface_scanner_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_scanner_node.dir/build.make CMakeFiles/surface_scanner_node.dir/build
 .PHONY : surface_scanner_node/fast
 
+#=============================================================================
+# Target rules for targets named calibrate
+
+# Build rule for target.
+calibrate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calibrate
+.PHONY : calibrate
+
+# fast build rule for target.
+calibrate/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calibrate.dir/build.make CMakeFiles/calibrate.dir/build
+.PHONY : calibrate/fast
+
+#=============================================================================
+# Target rules for targets named calibrate_with_import
+
+# Build rule for target.
+calibrate_with_import: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calibrate_with_import
+.PHONY : calibrate_with_import
+
+# fast build rule for target.
+calibrate_with_import/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calibrate_with_import.dir/build.make CMakeFiles/calibrate_with_import.dir/build
+.PHONY : calibrate_with_import/fast
+
+#=============================================================================
+# Target rules for targets named start_img_stream
+
+# Build rule for target.
+start_img_stream: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 start_img_stream
+.PHONY : start_img_stream
+
+# fast build rule for target.
+start_img_stream/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/start_img_stream.dir/build.make CMakeFiles/start_img_stream.dir/build
+.PHONY : start_img_stream/fast
+
+#=============================================================================
+# Target rules for targets named stop_img_stream
+
+# Build rule for target.
+stop_img_stream: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stop_img_stream
+.PHONY : stop_img_stream
+
+# fast build rule for target.
+stop_img_stream/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stop_img_stream.dir/build.make CMakeFiles/stop_img_stream.dir/build
+.PHONY : stop_img_stream/fast
+
+#=============================================================================
+# Target rules for targets named intr_calibration
+
+# Build rule for target.
+intr_calibration: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 intr_calibration
+.PHONY : intr_calibration
+
+# fast build rule for target.
+intr_calibration/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intr_calibration.dir/build.make CMakeFiles/intr_calibration.dir/build
+.PHONY : intr_calibration/fast
+
+#=============================================================================
+# Target rules for targets named extr_calibration
+
+# Build rule for target.
+extr_calibration: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extr_calibration
+.PHONY : extr_calibration
+
+# fast build rule for target.
+extr_calibration/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/extr_calibration.dir/build.make CMakeFiles/extr_calibration.dir/build
+.PHONY : extr_calibration/fast
+
+#=============================================================================
+# Target rules for targets named surface_line_imgs
+
+# Build rule for target.
+surface_line_imgs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 surface_line_imgs
+.PHONY : surface_line_imgs
+
+# fast build rule for target.
+surface_line_imgs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_line_imgs.dir/build.make CMakeFiles/surface_line_imgs.dir/build
+.PHONY : surface_line_imgs/fast
+
+src/calibration_client.o: src/calibration_client.cpp.o
+.PHONY : src/calibration_client.o
+
+# target to build an object file
+src/calibration_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calibrate.dir/build.make CMakeFiles/calibrate.dir/src/calibration_client.cpp.o
+.PHONY : src/calibration_client.cpp.o
+
+src/calibration_client.i: src/calibration_client.cpp.i
+.PHONY : src/calibration_client.i
+
+# target to preprocess a source file
+src/calibration_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calibrate.dir/build.make CMakeFiles/calibrate.dir/src/calibration_client.cpp.i
+.PHONY : src/calibration_client.cpp.i
+
+src/calibration_client.s: src/calibration_client.cpp.s
+.PHONY : src/calibration_client.s
+
+# target to generate assembly for a file
+src/calibration_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calibrate.dir/build.make CMakeFiles/calibrate.dir/src/calibration_client.cpp.s
+.PHONY : src/calibration_client.cpp.s
+
+src/calibration_client_import.o: src/calibration_client_import.cpp.o
+.PHONY : src/calibration_client_import.o
+
+# target to build an object file
+src/calibration_client_import.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calibrate_with_import.dir/build.make CMakeFiles/calibrate_with_import.dir/src/calibration_client_import.cpp.o
+.PHONY : src/calibration_client_import.cpp.o
+
+src/calibration_client_import.i: src/calibration_client_import.cpp.i
+.PHONY : src/calibration_client_import.i
+
+# target to preprocess a source file
+src/calibration_client_import.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calibrate_with_import.dir/build.make CMakeFiles/calibrate_with_import.dir/src/calibration_client_import.cpp.i
+.PHONY : src/calibration_client_import.cpp.i
+
+src/calibration_client_import.s: src/calibration_client_import.cpp.s
+.PHONY : src/calibration_client_import.s
+
+# target to generate assembly for a file
+src/calibration_client_import.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calibrate_with_import.dir/build.make CMakeFiles/calibrate_with_import.dir/src/calibration_client_import.cpp.s
+.PHONY : src/calibration_client_import.cpp.s
+
 src/camera_node.o: src/camera_node.cpp.o
 .PHONY : src/camera_node.o
 
@@ -246,6 +385,54 @@ src/camera_node.s: src/camera_node.cpp.s
 src/camera_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_node.dir/build.make CMakeFiles/camera_node.dir/src/camera_node.cpp.s
 .PHONY : src/camera_node.cpp.s
+
+src/start_img_stream.o: src/start_img_stream.cpp.o
+.PHONY : src/start_img_stream.o
+
+# target to build an object file
+src/start_img_stream.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/start_img_stream.dir/build.make CMakeFiles/start_img_stream.dir/src/start_img_stream.cpp.o
+.PHONY : src/start_img_stream.cpp.o
+
+src/start_img_stream.i: src/start_img_stream.cpp.i
+.PHONY : src/start_img_stream.i
+
+# target to preprocess a source file
+src/start_img_stream.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/start_img_stream.dir/build.make CMakeFiles/start_img_stream.dir/src/start_img_stream.cpp.i
+.PHONY : src/start_img_stream.cpp.i
+
+src/start_img_stream.s: src/start_img_stream.cpp.s
+.PHONY : src/start_img_stream.s
+
+# target to generate assembly for a file
+src/start_img_stream.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/start_img_stream.dir/build.make CMakeFiles/start_img_stream.dir/src/start_img_stream.cpp.s
+.PHONY : src/start_img_stream.cpp.s
+
+src/stop_img_stream.o: src/stop_img_stream.cpp.o
+.PHONY : src/stop_img_stream.o
+
+# target to build an object file
+src/stop_img_stream.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stop_img_stream.dir/build.make CMakeFiles/stop_img_stream.dir/src/stop_img_stream.cpp.o
+.PHONY : src/stop_img_stream.cpp.o
+
+src/stop_img_stream.i: src/stop_img_stream.cpp.i
+.PHONY : src/stop_img_stream.i
+
+# target to preprocess a source file
+src/stop_img_stream.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stop_img_stream.dir/build.make CMakeFiles/stop_img_stream.dir/src/stop_img_stream.cpp.i
+.PHONY : src/stop_img_stream.cpp.i
+
+src/stop_img_stream.s: src/stop_img_stream.cpp.s
+.PHONY : src/stop_img_stream.s
+
+# target to generate assembly for a file
+src/stop_img_stream.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stop_img_stream.dir/build.make CMakeFiles/stop_img_stream.dir/src/stop_img_stream.cpp.s
+.PHONY : src/stop_img_stream.cpp.s
 
 src/surface_scanner_node.o: src/surface_scanner_node.cpp.o
 .PHONY : src/surface_scanner_node.o
@@ -271,6 +458,78 @@ src/surface_scanner_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_scanner_node.dir/build.make CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.s
 .PHONY : src/surface_scanner_node.cpp.s
 
+src/trigger_take_cam_calib_imgs.o: src/trigger_take_cam_calib_imgs.cpp.o
+.PHONY : src/trigger_take_cam_calib_imgs.o
+
+# target to build an object file
+src/trigger_take_cam_calib_imgs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intr_calibration.dir/build.make CMakeFiles/intr_calibration.dir/src/trigger_take_cam_calib_imgs.cpp.o
+.PHONY : src/trigger_take_cam_calib_imgs.cpp.o
+
+src/trigger_take_cam_calib_imgs.i: src/trigger_take_cam_calib_imgs.cpp.i
+.PHONY : src/trigger_take_cam_calib_imgs.i
+
+# target to preprocess a source file
+src/trigger_take_cam_calib_imgs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intr_calibration.dir/build.make CMakeFiles/intr_calibration.dir/src/trigger_take_cam_calib_imgs.cpp.i
+.PHONY : src/trigger_take_cam_calib_imgs.cpp.i
+
+src/trigger_take_cam_calib_imgs.s: src/trigger_take_cam_calib_imgs.cpp.s
+.PHONY : src/trigger_take_cam_calib_imgs.s
+
+# target to generate assembly for a file
+src/trigger_take_cam_calib_imgs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/intr_calibration.dir/build.make CMakeFiles/intr_calibration.dir/src/trigger_take_cam_calib_imgs.cpp.s
+.PHONY : src/trigger_take_cam_calib_imgs.cpp.s
+
+src/trigger_take_img_pair_calib.o: src/trigger_take_img_pair_calib.cpp.o
+.PHONY : src/trigger_take_img_pair_calib.o
+
+# target to build an object file
+src/trigger_take_img_pair_calib.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/extr_calibration.dir/build.make CMakeFiles/extr_calibration.dir/src/trigger_take_img_pair_calib.cpp.o
+.PHONY : src/trigger_take_img_pair_calib.cpp.o
+
+src/trigger_take_img_pair_calib.i: src/trigger_take_img_pair_calib.cpp.i
+.PHONY : src/trigger_take_img_pair_calib.i
+
+# target to preprocess a source file
+src/trigger_take_img_pair_calib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/extr_calibration.dir/build.make CMakeFiles/extr_calibration.dir/src/trigger_take_img_pair_calib.cpp.i
+.PHONY : src/trigger_take_img_pair_calib.cpp.i
+
+src/trigger_take_img_pair_calib.s: src/trigger_take_img_pair_calib.cpp.s
+.PHONY : src/trigger_take_img_pair_calib.s
+
+# target to generate assembly for a file
+src/trigger_take_img_pair_calib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/extr_calibration.dir/build.make CMakeFiles/extr_calibration.dir/src/trigger_take_img_pair_calib.cpp.s
+.PHONY : src/trigger_take_img_pair_calib.cpp.s
+
+src/trigger_take_img_pair_surface.o: src/trigger_take_img_pair_surface.cpp.o
+.PHONY : src/trigger_take_img_pair_surface.o
+
+# target to build an object file
+src/trigger_take_img_pair_surface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_line_imgs.dir/build.make CMakeFiles/surface_line_imgs.dir/src/trigger_take_img_pair_surface.cpp.o
+.PHONY : src/trigger_take_img_pair_surface.cpp.o
+
+src/trigger_take_img_pair_surface.i: src/trigger_take_img_pair_surface.cpp.i
+.PHONY : src/trigger_take_img_pair_surface.i
+
+# target to preprocess a source file
+src/trigger_take_img_pair_surface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_line_imgs.dir/build.make CMakeFiles/surface_line_imgs.dir/src/trigger_take_img_pair_surface.cpp.i
+.PHONY : src/trigger_take_img_pair_surface.cpp.i
+
+src/trigger_take_img_pair_surface.s: src/trigger_take_img_pair_surface.cpp.s
+.PHONY : src/trigger_take_img_pair_surface.s
+
+# target to generate assembly for a file
+src/trigger_take_img_pair_surface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/surface_line_imgs.dir/build.make CMakeFiles/surface_line_imgs.dir/src/trigger_take_img_pair_surface.cpp.s
+.PHONY : src/trigger_take_img_pair_surface.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -286,14 +545,42 @@ help:
 	@echo "... test"
 	@echo "... SurfaceScanner_uninstall"
 	@echo "... uninstall"
+	@echo "... calibrate"
+	@echo "... calibrate_with_import"
 	@echo "... camera_node"
+	@echo "... extr_calibration"
+	@echo "... intr_calibration"
+	@echo "... start_img_stream"
+	@echo "... stop_img_stream"
+	@echo "... surface_line_imgs"
 	@echo "... surface_scanner_node"
+	@echo "... src/calibration_client.o"
+	@echo "... src/calibration_client.i"
+	@echo "... src/calibration_client.s"
+	@echo "... src/calibration_client_import.o"
+	@echo "... src/calibration_client_import.i"
+	@echo "... src/calibration_client_import.s"
 	@echo "... src/camera_node.o"
 	@echo "... src/camera_node.i"
 	@echo "... src/camera_node.s"
+	@echo "... src/start_img_stream.o"
+	@echo "... src/start_img_stream.i"
+	@echo "... src/start_img_stream.s"
+	@echo "... src/stop_img_stream.o"
+	@echo "... src/stop_img_stream.i"
+	@echo "... src/stop_img_stream.s"
 	@echo "... src/surface_scanner_node.o"
 	@echo "... src/surface_scanner_node.i"
 	@echo "... src/surface_scanner_node.s"
+	@echo "... src/trigger_take_cam_calib_imgs.o"
+	@echo "... src/trigger_take_cam_calib_imgs.i"
+	@echo "... src/trigger_take_cam_calib_imgs.s"
+	@echo "... src/trigger_take_img_pair_calib.o"
+	@echo "... src/trigger_take_img_pair_calib.i"
+	@echo "... src/trigger_take_img_pair_calib.s"
+	@echo "... src/trigger_take_img_pair_surface.o"
+	@echo "... src/trigger_take_img_pair_surface.i"
+	@echo "... src/trigger_take_img_pair_surface.s"
 .PHONY : help
 
 

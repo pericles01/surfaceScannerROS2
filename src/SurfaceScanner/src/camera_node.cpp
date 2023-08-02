@@ -122,8 +122,9 @@ void RPI_Camera_node::timerCallback(){
 
 int main(int argc, char **argv){
   rclcpp::init(argc, argv);
-  auto camera_node = std::make_shared<RPI_Camera_node>("RPI_Camera_Node");
+  auto camera_node = std::make_shared<RPI_Camera_node>();
   rclcpp::spin(camera_node);
   rclcpp::shutdown();
+  return 0;
 }
 

@@ -17,6 +17,7 @@ find_package(OpenCV REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(pcl_ros REQUIRED)
 find_package(interfaces REQUIRED)
+#find_package(serial REQUIRED)   #not used 
 
 include_directories(include)
 
@@ -27,6 +28,28 @@ ament_target_dependencies(camera_node OpenCV interfaces
 add_executable(surface_scanner_node src/surface_scanner_node.cpp)
 ament_target_dependencies(surface_scanner_node OpenCV interfaces
                           cv_bridge sensor_msgs rclcpp std_srvs std_msgs pcl_ros pcl_conversions)
+
+add_executable(calibrate src/calibration_client.cpp)
+ament_target_dependencies(calibrate rclcpp std_srvs)
+
+add_executable(calibrate_with_import src/calibration_client_import.cpp)
+ament_target_dependencies(calibrate_with_import interfaces rclcpp std_srvs)
+
+add_executable(start_img_stream src/start_img_stream.cpp)
+ament_target_dependencies(start_img_stream rclcpp std_srvs)
+
+add_executable(stop_img_stream src/stop_img_stream.cpp)
+ament_target_dependencies(stop_img_stream rclcpp std_srvs)
+
+add_executable(intr_calibration src/trigger_take_cam_calib_imgs.cpp)
+ament_target_dependencies(intr_calibration rclcpp std_srvs)
+
+add_executable(extr_calibration src/trigger_take_img_pair_calib.cpp)
+ament_target_dependencies(extr_calibration rclcpp std_srvs)
+
+add_executable(surface_line_imgs src/trigger_take_img_pair_surface.cpp)
+ament_target_dependencies(surface_line_imgs rclcpp std_srvs)
+
 install(
   DIRECTORY include/SurfaceScanner
   DESTINATION include

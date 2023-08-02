@@ -40,29 +40,7 @@ max_serialized_size_Image(
 }  // namespace msg
 }  // namespace sensor_msgs
 
-namespace sensor_msgs
-{
-namespace msg
-{
-namespace typesupport_fastrtps_cpp
-{
-bool cdr_serialize(
-  const sensor_msgs::msg::Image &,
-  eprosima::fastcdr::Cdr &);
-bool cdr_deserialize(
-  eprosima::fastcdr::Cdr &,
-  sensor_msgs::msg::Image &);
-size_t get_serialized_size(
-  const sensor_msgs::msg::Image &,
-  size_t current_alignment);
-size_t
-max_serialized_size_Image(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-}  // namespace typesupport_fastrtps_cpp
-}  // namespace msg
-}  // namespace sensor_msgs
+// functions for sensor_msgs::msg::Image already declared above
 
 
 namespace interfaces

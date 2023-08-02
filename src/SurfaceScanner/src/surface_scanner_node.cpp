@@ -55,9 +55,10 @@ void SurfaceScannerNode::calibrateWithImportSrvCallback(const std::shared_ptr<in
         response->message = "Scanner calibration cancelled! Missing images for laser calibration.";
     }
     else{
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Incoming request for scanner calibration with import of camera parameters!");
-        RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Holding two images to calibrate laser.");
-        RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "[origin_img: " << m_originImg.size() <<", laser_img: " << m_laserImg.size() << "]");
+        auto logger = this->get_logger();//rclcpp::get_logger("rclcpp");
+        RCLCPP_INFO(logger, "Incoming request for scanner calibration with import of camera parameters!");
+        RCLCPP_INFO(logger, "Holding two images to calibrate laser.");
+        RCLCPP_INFO_STREAM(logger, "[origin_img: " << m_originImg.size() <<", laser_img: " << m_laserImg.size() << "]");
         m_Scanner.calibrateScannerWithImport(request->file, m_originImg, m_laserImg);
 
         if(!m_Scanner.isScannerCalibrated()){
@@ -117,7 +118,8 @@ void SurfaceScannerNode::camCalibImgsCallback(const interfaces::msg::CameraCalib
 int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
-  std::shared_ptr<rclcpp::Node> node = rclcpp::Node::make_shared("SurfaceScannerNode");
+  std::shared_ptr<rclcpp::Node> node = std::make_shared<SurfaceScannerNode>();
   rclcpp::spin(node);
   rclcpp::shutdown();
+  return 0;
 }

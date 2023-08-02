@@ -1,0 +1,56 @@
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.5 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.3 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found image_transport: 3.1.5 (/opt/ros/humble/share/image_transport/cmake)
+-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+-- Found pcl_ros: 2.4.0 (/opt/ros/humble/share/pcl_ros/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- Found interfaces: 0.0.0 (/home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/install/interfaces/share/interfaces/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/peri/Desktop/Studium/ROS Robotik/SurfaceScanner_ws/build/SurfaceScanner
+[35m[1mConsolidate compiler generated dependencies of target camera_node[0m
+[35m[1mConsolidate compiler generated dependencies of target surface_scanner_node[0m
+[  5%] [32mBuilding CXX object CMakeFiles/calibrate_with_import.dir/src/calibration_client_import.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/start_img_stream.dir/src/start_img_stream.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/extr_calibration.dir/src/trigger_take_img_pair_calib.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/intr_calibration.dir/src/trigger_take_cam_calib_imgs.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/stop_img_stream.dir/src/stop_img_stream.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/calibrate.dir/src/calibration_client.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/camera_node.dir/src/camera_node.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/surface_scanner_node.dir/src/surface_scanner_node.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable intr_calibration[0m
+[ 55%] [32m[1mLinking CXX executable calibrate[0m
+[ 61%] [32m[1mLinking CXX executable extr_calibration[0m
+[ 66%] [32m[1mLinking CXX executable calibrate_with_import[0m
+[ 72%] [32m[1mLinking CXX executable start_img_stream[0m
+[ 77%] [32m[1mLinking CXX executable stop_img_stream[0m
+[ 77%] Built target calibrate
+[ 77%] Built target intr_calibration
+[ 83%] [32mBuilding CXX object CMakeFiles/surface_line_imgs.dir/src/trigger_take_img_pair_surface.cpp.o[0m
+[ 83%] Built target extr_calibration
+[ 83%] Built target calibrate_with_import
+[ 83%] Built target start_img_stream
+[ 83%] Built target stop_img_stream
+[ 88%] [32m[1mLinking CXX executable surface_line_imgs[0m
+[ 88%] Built target surface_line_imgs
