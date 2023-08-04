@@ -2,13 +2,13 @@
 
 SurfaceScannerNode::SurfaceScannerNode():Node("SurfaceScannerNode"), m_Scanner(Scanner()), m_originImg(defaultMat), m_laserImg(defaultMat), m_calibImgs(std::vector<cv::Mat>())
 {
-    m_calibrateScannerSrv = create_service<std_srvs::srv::Trigger>("calibrate_scanner", &SurfaceScannerNode::calibrateScannerSrvCallback);
+    m_calibrateScannerSrv = create_service<std_srvs::srv::Trigger>("calibrate_scanner", std::bind(&SurfaceScannerNode::calibrateScannerSrvCallback, this, _1));
 
-    m_calibrateLaserWithImportSrv = create_service<interfaces::srv::CalibrateLaserImport>("calibrate_with_import", &SurfaceScannerNode::calibrateWithImportSrvCallback);
+    m_calibrateLaserWithImportSrv = create_service<interfaces::srv::CalibrateLaserImport>("calibrate_with_import", std::bind(&SurfaceScannerNode::calibrateWithImportSrvCallback, this, _2));
     
-    imgPairSub = create_subscription<interfaces::msg::ImagePair>("img_pair", 10, std::bind(&SurfaceScannerNode::imagePairCallback, this, _1));
+    imgPairSub = create_subscription<interfaces::msg::ImagePair>("img_pair", 10, std::bind(&SurfaceScannerNode::imagePairCallback, this, _3));
 
-    camCalibrateImgsSub = create_subscription<interfaces::msg::CameraCalibrationImgs>("cam_calib_imgs", 10, std::bind(&SurfaceScannerNode::camCalibImgsCallback, this, _1));
+    camCalibrateImgsSub = create_subscription<interfaces::msg::CameraCalibrationImgs>("cam_calib_imgs", 10, std::bind(&SurfaceScannerNode::camCalibImgsCallback, this, _4));
 
     pcdPub = create_publisher<sensor_msgs::msg::PointCloud2>("surface_line", 10);
 
