@@ -4,20 +4,11 @@
 #include <cv_bridge/cv_bridge.h>
 #include "SurfaceScanner/scanner.hpp"
 #include <sensor_msgs/msg/point_cloud2.hpp>
-//#include "interfaces/include/interfaces/interfaces/msg/camera_calibration_imgs.hpp"
-//#include "interfaces/include/interfaces/interfaces/msg/image_pair.hpp"
-//#include "interfaces/include/interfaces/interfaces/srv/calibrate_laser_import.hpp"
-
 #include "interfaces/msg/image_pair.hpp"
 #include "interfaces/msg/camera_calibration_imgs.hpp"
 #include "interfaces/srv/calibrate_laser_import.hpp"
+using namespace std::placeholders;
 
-
-using std::placeholders::_1;
-using std::placeholders::_2;
-using std::placeholders::_3;
-using std::placeholders::_4;
-using std::placeholders::_5;
 
 class SurfaceScannerNode : public rclcpp::Node
 {

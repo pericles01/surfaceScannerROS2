@@ -15,21 +15,18 @@
 using namespace std;
 using namespace interfaces;
 using namespace cv;
-using std::placeholders::_1;
-using std::placeholders::_2;
-using std::placeholders::_3;
-using std::placeholders::_4;
-using std::placeholders::_5;
+using namespace std::placeholders;
+
 
 class RPI_Camera_node : public rclcpp::Node
 {
   public: RPI_Camera_node() : Node("camera_node"){
 
-    srv_send_cam_calib_imgs = create_service<std_srvs::srv::Trigger>("send_cam_calib_imgs", std::bind(&RPI_Camera_node::send_cam_calib_imgs, this, _1));
-    srv_send_img_pair_calib = create_service<std_srvs::srv::Trigger>("send_img_pair_calib", std::bind(&RPI_Camera_node::send_img_pair_calib, this, _2));
-    srv_send_img_pair_surface = create_service<std_srvs::srv::Trigger>("send_img_pair_surface", std::bind(&RPI_Camera_node::send_img_pair_surface, this, _3));
-    srv_start_img_stream = create_service<std_srvs::srv::Trigger>("start_img_stream", std::bind(&RPI_Camera_node::start_img_stream, this, _4));
-    srv_stop_img_stream = create_service<std_srvs::srv::Trigger>("stop_img_stream", std::bind(&RPI_Camera_node::send_img_pair_calib, this, _5));
+    srv_send_cam_calib_imgs = create_service<std_srvs::srv::Trigger>("send_cam_calib_imgs", std::bind(&RPI_Camera_node::send_cam_calib_imgs, this, _1, _2));
+    srv_send_img_pair_calib = create_service<std_srvs::srv::Trigger>("send_img_pair_calib", std::bind(&RPI_Camera_node::send_img_pair_calib, this, _1, _2));
+    srv_send_img_pair_surface = create_service<std_srvs::srv::Trigger>("send_img_pair_surface", std::bind(&RPI_Camera_node::send_img_pair_surface, this, _1, _2));
+    srv_start_img_stream = create_service<std_srvs::srv::Trigger>("start_img_stream", std::bind(&RPI_Camera_node::start_img_stream, this, _1, _2));
+    srv_stop_img_stream = create_service<std_srvs::srv::Trigger>("stop_img_stream", std::bind(&RPI_Camera_node::send_img_pair_calib, this, _1, _2));
 
     pub_img = create_publisher<sensor_msgs::msg::Image>("img_publisher", 10);          
     pub_imgPair = create_publisher<msg::ImagePair>("img_pair", 10);                    
