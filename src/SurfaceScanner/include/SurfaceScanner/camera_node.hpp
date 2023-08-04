@@ -1,3 +1,4 @@
+#pragma once
 #include <opencv2/opencv.hpp>
 #include <sensor_msgs/msg/image.h>
 #include <cv_bridge/cv_bridge.h>

@@ -1,6 +1,4 @@
-#ifndef SERIAL_CONNECTION_HPP_
-#define SERIAL_CONNECTION_HPP_
-
+#pragma once
 #include <iostream>
 #include <string>
 #include <boost/asio.hpp>
@@ -19,7 +17,4 @@ private:
     boost::asio::io_service io;
     boost::asio::serial_port serialPort{io};
 };
-
-#endif  // SERIAL_CONNECTION_HPP_
-
 

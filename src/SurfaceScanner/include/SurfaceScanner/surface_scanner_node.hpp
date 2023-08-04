@@ -1,3 +1,4 @@
+#pragma once
 #include "rclcpp/rclcpp.hpp"
 #include "std_srvs/srv/trigger.hpp"
 #include <cv_bridge/cv_bridge.h>

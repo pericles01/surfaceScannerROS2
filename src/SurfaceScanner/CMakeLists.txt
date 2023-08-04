@@ -58,6 +58,13 @@ install(
 install(TARGETS
   camera_node
   surface_scanner_node
+  calibrate
+  calibrate_with_import
+  start_img_stream
+  stop_img_stream
+  intr_calibration
+  extr_calibration
+  surface_line_imgs
   DESTINATION lib/${PROJECT_NAME}
   INCLUDES DESTINATION include)
 
