@@ -1,13 +1,5 @@
 # A laser triangulation  sensor with ROS2
 
-![](https://img.shields.io/badge/Ros2-Galactic-blue?style=plastic&logo=ros)
-![](https://img.shields.io/badge/Ubuntu-20.04_LTS-orange?style=plastic&logo=ubuntu)
-![](https://img.shields.io/badge/Python-3.8-darkgreen?style=plastic&logo=python)
-![](https://img.shields.io/badge/OpenCv-4.5.5-lightblue?style=plastic&logo=opencv)
-![](https://img.shields.io/badge/Open3D-0.13.0-red?style=plastic)
-___
-
-
 This Repository introduces a sofware package for a laser triangulation sensor. The sensor is used to reconstruct surfaces of wood slices.  
 
 Here some [example scans](scans) produced by the sensor:
@@ -24,22 +16,13 @@ Here some [example scans](scans) produced by the sensor:
 ## 	⚙️ Requirements
 * The system ist tested under Ubuntu 20.04 LTS (Focal Fossa).
 * A Basler a2A1920-160ucPRO is used as camera (*with the current code it should be possible to use any other Basler camera*).
-* The used ROS version is [**ROS2 Galactic**](https://docs.ros.org/en/galactic/index.html).
-* Used Python packages are:
-  * [Numpy](https://numpy.org/),
-  * [OpenCv](https://opencv.org/),
-  * [Open3D](http://www.open3d.org/),
+* The used ROS version is [**ROS2 Humble**](https://docs.ros.org/en/humble/index.html).
+* Used C++ packages are:
+  * [Pcl](https://pointclouds.org/),
+  * [OpenCv](https://docs.opencv.org/4.x/d9/df8/tutorial_root.html),
   
-The Sytem is tested with two setups.
-* Test setup with Basler camera:
-    * A Basler a2A1920-160ucPRO is used as camera (*with the current code it should be possible to use any other Basler camera*).
-    * [Pypylon](https://github.com/basler/pypylon) (driver for Basler cameras).
-    * Arduino with CNC-Shield to use GRBL,
-    * linear slide from a 3D-printer,
-    * Python libary [serial](https://pyserial.readthedocs.io/en/latest/shortintro.html).
-* Setup with Raspberry Pi:
+The Sytem is tested with Raspberry Pi:
     * tested on **Raspberry Pi 3B Plus** and **Raspberry Pi 4**
-    * MIPI camera module
 
 ## Installation
 
@@ -58,17 +41,6 @@ To use the ROS2-nodes you have to source your current worspace from inside the w
 ```
 
 ## Usage
-### Start the Scanner
-To launch the whole surface scanner use the launch-file:
-```
-ros2 launch surface_scanner surface_scanner.launch.py
-```
-This will start three nodes, the **surface_scanner_node**, **camera_node** and **rviz2**.
-
-```
-# for raspberry setup
-ros2 launch surface_scanner surface_scanner_rasp.launch.py
-```
 
 ## Nodes
 ### surface_scanner_node
@@ -92,7 +64,7 @@ Responsible for all calculations. Stores all data.
 
     Calibrates the scanner by importing the camera data. Only usable if the scanner has recieved the extrinsic calibration images. Path to the intrisic camera data as **.npz**-file is required. Calibration result can be checked via Rviz2.
 
-### camera_node (camera_node_rasp)
+### camera_node
 The optical sensor of the triangolation sensor. Takes images for calibration and to reconstruct the surface. The pictures will be send to the surface_scanner_node via special topics.
 #### Published Topics
 * **`/cam_calib_imgs`** ([interfaces/msg/CameraCalibrationImgs](interfaces/msg/CameraCalibrationImgs.msg))
@@ -220,7 +192,7 @@ ros2 run surface_scanner stop_img_stream
 ## Pointcloud generation
 When the scanner is calibrated you can use it to reconstruct surfaces. A method that is always possible after calibration is to acquire one surface line with the following function. You will find the created pointcloud in the out-directory.
 ```
-ros2 run surface_scanner surface_line
+ros2 run surface_scanner surface_line_imgs
 ```
 This function generates several surface_line pointclouds in a row.
 ```
