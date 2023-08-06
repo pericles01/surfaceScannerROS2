@@ -123,7 +123,7 @@ Used as point cloud subscriber
 Now you have to calibrate the scanner. The calibration consists of an **intrinsic** and an **extrinsic** calibration. For the intrinsic calibration, a chessboard must be recorded from 10 different positions. For the extrinsic one, the special calibration board with ChArUco markers must be placed under the sensor. 
 
 ```
-ros2 run surface_scanner intr_calib_imgs
+ros2 run surface_scanner intr_calibration
 ```
 
 This function is used to take the intrinsic calibration images.
@@ -145,7 +145,7 @@ The images shoud be look like this:
 >* checker size = 0.025 m
 
 ```
-ros2 run surface_scanner extr_calib_imgs
+ros2 run surface_scanner extr_calibration
 ```
 
 This function is used to take the extrinsic calibration images. You have to take an clear picture of the calibration board. The image pair shoud look like this:
